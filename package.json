@@ -1,0 +1,21 @@
+{
+  "name": "blockchain-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "prices": "node --optimize-for-size --max-old-space-size=300 --gc-interval=25 src/prices.js",
+    "pairs": "node --optimize-for-size --max-old-space-size=200 --gc-interval=25 src/pairs.js",
+    "new-tokens": "node --optimize-for-size --max-old-space-size=200 --gc-interval=25 src/new-tokens.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big.js": "^6.1.1",
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.2",
+    "node-cron": "^3.0.0",
+    "web3": "^1.4.0"
+  }
+}
